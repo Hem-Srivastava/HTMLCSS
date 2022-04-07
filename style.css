@@ -1,0 +1,87 @@
+body{
+    margin: 0rem 2rem;
+}
+*{
+    font-family: 'Red Hat Mono', monospace;
+    box-sizing: border-box;
+}
+
+a{
+     text-decoration: none; /*to remove underline from the links*/
+}
+ li{
+     /* to remove dot from the unordered list */
+    list-style: none;
+}
+a.link{
+    color: black;
+}
+a.visited{
+    color: black;
+}
+a.hover{
+    color: red;
+}
+a.active{
+    color: red;
+}
+a{
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+/* main area for appling flexbox in it */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    margin-left: 2rem;
+}
+nav{
+    margin-right: 1rem;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20rem;
+}
+ul>li{
+    width: 30%;
+    font-size: 1 rem;
+}
+/* main image */
+.main-img{
+    width: 100%;
+    height: auto;
+}
+/* main */
+.parent{
+    margin-top: 2rem;
+    display:flex;
+    /* text inside that parent including image will be centered */
+    text-align: center;
+    justify-content: space-evenly;
+}
+.child{
+    width: 30%;
+}
+.footer_parent {
+    height: 5rem;
+    background-color: black;
+/* it is used to perfectly center a div*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.footer_content {
+    color: white;
+    /* boldness */
+    font-weight: 500;
+    font-size: 1.5rem;
+    /* enforce uppercase */
+    text-transform: uppercase;
+
+}
